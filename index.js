@@ -8,10 +8,12 @@ const voteRoutes = require('./routes/voteRoutes');
 
 const app = express();
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: process.env.NODE_ENV === 'production'
+    ? process.env.CLIENT_ORIGIN 
+    : 'http://localhost:5173',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization','x-user-email'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'x-user-email'],
 };
 
 app.use(cors(corsOptions));
