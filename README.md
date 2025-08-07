@@ -2,6 +2,10 @@
 
 A secure and scalable full-stack voting application built using **MongoDB**, **Express**, **React (Vite)**, **Auth0**, and **Cloudinary**. It allows authenticated users to register votes and provides an admin interface for approval and moderation.
 
+📁 Branch Structure
+main — contains the Frontend code (React + Tailwind + Auth0)
+backend — contains the Backend code (Node.js + Express + MongoDB)
+
 ## 🚀 Tech Stack
 
 * **Frontend**: React + Vite, Tailwind CSS, Lenis (Smooth Scroll), Auth0, Cloudinary
@@ -14,7 +18,6 @@ A secure and scalable full-stack voting application built using **MongoDB**, **E
 ```
 ElectraTrust/
 ├── Frontend/        # Vite React Client
-├── Backend/         # Express Server API
 └── README.md
 ```
 
@@ -141,4 +144,5 @@ Feel free to fork and open a pull request. For major changes, please open an iss
 ## 📜 License
 
 This project is licensed under the MIT License.
+
 
