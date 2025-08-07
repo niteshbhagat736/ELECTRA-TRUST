@@ -20,38 +20,63 @@ ElectraTrust/
 
 ---
 
-## 🔧 Backend Setup (Express API)
+# ⚙️Backend setup
 
-### 1. Navigate to backend directory:
+This is the backend API for the **Electra Trust Project**, built using **Node.js + Express**. It handles server-side operations like API routing, database connections, and environment setup.
+
+---
+
+## 🚀 Quick Setup
+
+### 1. Clone the `Backend` Branch
+first create a folder backend then  
+
+```bash cd backend ```
 
 ```bash
-cd backend
+
+git clone -b Backend https://github.com/niteshbhagat736/ELECTRA-TRUST.git
+
 ```
 
-### 2. Install dependencies:
+> This clones only the `Backend` branch into a folder named `backend`.
+
+---
+
+### 2. Install Dependencies
 
 ```bash
+
 npm install
+
 ```
 
-### 3. Create `.env` file:
+---
+
+### 3. Configure Environment Variables
+
+Create a `.env` file in the root of the `backend` directory with the following content:
 
 ```env
 ADMIN_EMAIL=abc@gmail.com
-MONGO_URI=
+MONGO_URI=your_mongodb_connection_uri
 NODE_ENV=development
 PORT=3000
 SELF_URL=http://localhost:3000
-CLIENT_ORIGIN=
+CLIENT_ORIGIN=http://localhost:5173
 ```
 
-### 4. Start the backend server:
+> Replace values with your actual credentials and URLs.
+
+---
+
+### 4. Start the Development Server
 
 ```bash
-npm run dev
+nodemon index.js
 ```
 
-The backend will run on `http://localhost:3000`
+this will run the backend server at localhost:3000
 
 ---
 
@@ -116,3 +141,4 @@ Feel free to fork and open a pull request. For major changes, please open an iss
 ## 📜 License
 
 This project is licensed under the MIT License.
+
